@@ -1,7 +1,9 @@
-import { ComponentExample } from "@/components/component-example";
+import { AppBar } from '@/_shared/components/smart/app-bar';
 
 export function App() {
-  return <ComponentExample />;
+  return <div>
+    <AppBar/>
+  </div>;
 }
 
 export default App;
