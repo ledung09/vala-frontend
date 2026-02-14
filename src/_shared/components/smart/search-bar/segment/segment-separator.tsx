@@ -1,5 +1,5 @@
-import { Separator } from '@/_shared/components/ui/separator.tsx';
-import { cn } from '@/_shared/lib/utils.ts';
+import { Separator } from "@/_shared/components/ui/separator.tsx";
+import { cn } from "@/_shared/lib/utils.ts";
 
 interface SegmentSeparatorProps {
   readonly className?: string;
@@ -12,10 +12,10 @@ export default function SegmentSeparator({
 }: SegmentSeparatorProps) {
   return (
     <Separator
-      orientation='vertical'
+      orientation="vertical"
       className={cn(
-        'transition-opacity h-10 my-auto opacity-100',
-        'data-[hidden=true]:opacity-0',
+        "my-auto h-10 opacity-100 transition-opacity",
+        "data-[hidden=true]:opacity-0",
         className,
       )}
       data-hidden={hidden}

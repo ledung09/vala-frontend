@@ -6,7 +6,7 @@ export const Segment = {
 
 export type SegmentIdType = number;
 
-export type SegmentDisplayStatus = 'default' | 'open' | 'other-open'
+export type SegmentDisplayStatus = "default" | "open" | "other-open";
 
 export interface BaseSegmentProps {
   readonly displayStatus: SegmentDisplayStatus;
