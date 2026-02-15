@@ -1,28 +1,27 @@
-import { Badge } from "@/_shared/components/ui/badge.tsx";
-import { Button } from "@/_shared/components/ui/button.tsx";
-import { Card } from "@/_shared/components/ui/card.tsx";
-import { Separator } from "@/_shared/components/ui/separator.tsx";
-import { ClockIcon, DumbbellIcon, MapPinIcon } from "lucide-react";
+import { Badge } from '@/_shared/components/ui/badge.tsx';
+import { Button } from '@/_shared/components/ui/button.tsx';
+import { Card } from '@/_shared/components/ui/card.tsx';
+import { Separator } from '@/_shared/components/ui/separator.tsx';
+import { ClockIcon, MapPinIcon } from 'lucide-react';
 
 export default function SearchItem() {
   return (
-    <Card className="w-full flex-row gap-0 p-0">
-      <div className="w-44">
+    <Card className="w-full flex-row gap-0 p-0 shadow-md">
+      <div className="w-40 p-3">
         <img
-          className="h-full w-full object-cover"
+          className="aspect-square h-full w-full rounded-md object-cover transition-transform hover:scale-105"
           src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
         />
       </div>
       <div className="flex flex-1">
         <div className="flex flex-1 flex-col p-4 pl-6 text-xs">
           <div className="flex items-center justify-between">
-            <span className="text-xl font-medium">Hoi cau long anh Dung</span>
-            <Badge variant="secondary" className="text-sm">
-              <DumbbellIcon className="mr-1" />
+            <span className="text-lg font-medium">Hoi cau long anh Dung</span>
+            <Badge variant="secondary" className="py-3 text-xs shadow-md">
               TB- / TB / TB+
             </Badge>
           </div>
-          <span className="text-muted-foreground mt-2 flex items-center gap-1 text-sm">
+          <span className="text-muted-foreground mt-0.5 flex items-center gap-1 text-sm">
             <MapPinIcon className="size-4" />
             San cau long Hong Chau
           </span>
